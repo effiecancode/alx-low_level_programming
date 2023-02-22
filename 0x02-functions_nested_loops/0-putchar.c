@@ -1,20 +1,19 @@
 #include "main.h"
-
 /**
- * main - Prints Holberton as a message.
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int str[] = {72, 111, 108, 98, 101, 114, 116, 111, 110};
-	int count, sz;
+	char *sh = "Holberton";
 
-	sz = sizeof(str) / sizeof(int);
-	for (count = 0; count < sz; count++)
+	while (*sh)
 	{
-		_putchar(str[count]);
+		_putchar(*sh);
+		sh++;
 	}
 	_putchar('\n');
+
 	return (0);
 }
