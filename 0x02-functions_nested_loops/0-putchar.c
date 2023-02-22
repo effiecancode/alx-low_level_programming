@@ -5,9 +5,11 @@
 * main - print _putchar
 
 * is written by effiecancode
+
 *
 
 * Return: 0
+
 */
 
 
