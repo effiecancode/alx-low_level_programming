@@ -4,7 +4,8 @@
 
 * main - print _putchar
 
-* is written by mbah
+* is written by effiecancode
+*
 
 * Return: 0
 */
