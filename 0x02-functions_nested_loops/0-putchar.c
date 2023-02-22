@@ -7,10 +7,6 @@
 
 *
 
-* is written by effiecancode
-
-*
-
 * Return: 0
 
 */
