@@ -7,11 +7,16 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i;
+	int i, bitsPrinted;
 
-	for (i = sizeof(unsigned long int) * 8 - 1; i >= 0; i--)
+	if (n == 0)
+		_putchar('0');
+
+	for (bitsPrinted = 0, i = sizeof(n) * 8 - 1; i >= 0; i--)
 	{
-			
-		_putchar((n & 1) ? '1' : '0');
+		if ((n >> i) & 1)
+			bitsPrinted = 1;
+		if (bitsPrinted == 1)
+		((n >> 1) & 1) ? _putchar('1') : _putchar('0');
 	}
 }
