@@ -25,6 +25,10 @@ char *create_buffer(char *file)
 
 	return (buffer);
 }
+/**
+ * close_file - function to close file descriptors
+ * @fd: file descriptor tobe closed
+ */
 
 void close_file(int fd)
 {
@@ -38,6 +42,19 @@ void close_file(int fd)
 		exit(100);
 	}
 }
+
+/**
+ * main - function to Copy the contents of file to another file
+ * @argc: number of args supplied to the program
+ * @argv: array of pointers to the args
+ *
+ * Return: 0 on success.
+ *
+ * Description: correct argument-exit cod 97,
+ *              does not exist exit code 98,
+ *              cannot be created exit code 99,
+ *              cannot be closed exit code 100
+ */
 
 int main(int argc, char *argv[])
 {
@@ -86,4 +103,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
